@@ -1,7 +1,7 @@
 package com.worldNavigator.model.gameSrc.controls.commands.playerCommands;
 
-import com.worldNavigator.model.gameSrc.Map.RoomObjects.*;
-import com.worldNavigator.model.gameSrc.PlayerInfo.Player;
+import com.worldNavigator.model.gameSrc.map.roomObjects.*;
+import com.worldNavigator.model.gameSrc.playerInfo.Player;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

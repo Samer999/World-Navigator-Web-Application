@@ -1,7 +1,7 @@
 package com.worldNavigator.controller;
 
 
-import com.worldNavigator.model.gameSrc.PlayerInfo.Player;
+import com.worldNavigator.model.gameSrc.playerInfo.Player;
 import com.worldNavigator.model.gameSrc.controls.GameDriver;
 import com.worldNavigator.model.gameSrc.controls.controller.DefaultController;
 import com.worldNavigator.model.gameSrc.controls.gameModes.SinglePlayerMode;

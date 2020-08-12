@@ -1,6 +1,6 @@
 package com.worldNavigator.model.gameSrc.controls.commands.playerCommands;
 
-import com.worldNavigator.model.gameSrc.PlayerInfo.Player;
+import com.worldNavigator.model.gameSrc.playerInfo.Player;
 import com.worldNavigator.model.gameSrc.controls.commands.Command;
 
 import java.io.DataInputStream;

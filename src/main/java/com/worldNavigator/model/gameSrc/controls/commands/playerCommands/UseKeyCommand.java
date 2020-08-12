@@ -1,9 +1,9 @@
 package com.worldNavigator.model.gameSrc.controls.commands.playerCommands;
 
-import com.worldNavigator.model.gameSrc.Items.Item;
-import com.worldNavigator.model.gameSrc.Items.Key;
-import com.worldNavigator.model.gameSrc.Map.RoomObjects.Lockable;
-import com.worldNavigator.model.gameSrc.PlayerInfo.Player;
+import com.worldNavigator.model.gameSrc.items.Item;
+import com.worldNavigator.model.gameSrc.items.Key;
+import com.worldNavigator.model.gameSrc.map.roomObjects.Lockable;
+import com.worldNavigator.model.gameSrc.playerInfo.Player;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

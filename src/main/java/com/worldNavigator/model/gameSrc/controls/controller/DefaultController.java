@@ -1,6 +1,6 @@
 package com.worldNavigator.model.gameSrc.controls.controller;
 
-import com.worldNavigator.model.gameSrc.PlayerInfo.Player;
+import com.worldNavigator.model.gameSrc.playerInfo.Player;
 import com.worldNavigator.model.gameSrc.controls.commands.Command;
 import com.worldNavigator.model.gameSrc.controls.commands.playerCommands.*;
 

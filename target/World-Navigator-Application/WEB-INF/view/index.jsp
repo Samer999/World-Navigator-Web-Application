@@ -55,7 +55,7 @@
 				>Home</a></li>
 				<li class="nav-item"><a
 						class="nav-link"
-						href="${pageContext.request.contextPath}/Game/GameMenu"
+						href="#"
 				>Game</a></li>
 			</ul>
 		</div>

@@ -1,8 +1,8 @@
 package com.worldNavigator.model.gameSrc.controls;
 
-import com.worldNavigator.model.gameSrc.Map.Map;
-import com.worldNavigator.model.gameSrc.Map.MapCreator;
-import com.worldNavigator.model.gameSrc.Map.MapLoader;
+import com.worldNavigator.model.gameSrc.map.Map;
+import com.worldNavigator.model.gameSrc.map.MapCreator;
+import com.worldNavigator.model.gameSrc.map.MapLoader;
 
 import java.io.File;
 import java.io.IOException;
@@ -30,8 +30,7 @@ public class GameDriver {
     }
 
     private void findMaps() {
-
-        File file = new File("/maps_folder");
+        File file = new File("maps_folder");
         System.out.println(file.getAbsolutePath() + " " + file.exists());
         for (File fileEntry : file.listFiles()) {
             if (fileEntry.isDirectory()) {

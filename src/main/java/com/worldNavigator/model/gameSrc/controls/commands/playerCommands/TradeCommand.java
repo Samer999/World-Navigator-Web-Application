@@ -1,7 +1,7 @@
 package com.worldNavigator.model.gameSrc.controls.commands.playerCommands;
 
-import com.worldNavigator.model.gameSrc.PlayerInfo.Player;
-import com.worldNavigator.model.gameSrc.PlayerInfo.Trader;
+import com.worldNavigator.model.gameSrc.playerInfo.Player;
+import com.worldNavigator.model.gameSrc.playerInfo.Trader;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

@@ -1,5 +1,5 @@
 <!doctype html>
-<%@ page isELIgnored="false"%>
+<%@ page isELIgnored="false" %>
 <html lang="en">
 <head>
     <!-- Required meta tags -->
@@ -70,8 +70,15 @@
             </a></li>
 
             <li class="nav-item active"><a
+                    class="btn btn-primary"
+                    href="javascript:alert('You can get more wins!');"
+                    role="button"
+                    style="margin-left: 20px"
+            >You have : <%=session.getAttribute("user_wins")%> win/s</a></li>
+
+            <li class="nav-item active"><a
                     class="btn btn-danger"
-                    href="Logout"
+                    href="${pageContext.request.contextPath}/Logout"
                     role="button"
                     style="margin-left: 20px"
             >Logout</a></li>

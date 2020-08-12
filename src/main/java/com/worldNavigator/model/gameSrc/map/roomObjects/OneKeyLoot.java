@@ -1,0 +1,64 @@
+package com.worldNavigator.model.gameSrc.map.roomObjects;
+
+import com.worldNavigator.model.gameSrc.items.Key;
+import com.worldNavigator.model.gameSrc.playerInfo.Player;
+
+import java.io.Serializable;
+import java.util.Objects;
+
+/** OneKeyLoot is a type of loot that is just a Key */
+public class OneKeyLoot implements Loot, Serializable {
+
+  private Key key;
+
+  public OneKeyLoot() {}
+
+  public OneKeyLoot(Key key) {
+    if (key == null) {
+      throw new NullPointerException("key value is null!");
+    }
+
+    this.key = key;
+  }
+
+  public void loot(Player player) {
+
+    if (player == null) {
+      throw new NullPointerException("player value is null!");
+    }
+
+    if (key == null) {
+      System.out.println("No Key is hidden here");
+      return;
+    }
+
+    player.giveItem(key);
+    System.out.println("the " + key.getName() + " key was acquired");
+    key = null;
+  }
+  
+  public String keyLoot() {
+	  return key.toString();
+  }
+  
+  public boolean keyExist() {
+	  return key != null;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) {
+      return true;
+    }
+    if (o == null || getClass() != o.getClass()) {
+      return false;
+    }
+    OneKeyLoot that = (OneKeyLoot) o;
+    return key.equals(that.key);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(key);
+  }
+}

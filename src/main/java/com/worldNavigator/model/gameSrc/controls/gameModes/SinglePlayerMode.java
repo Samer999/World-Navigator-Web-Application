@@ -1,10 +1,9 @@
 package com.worldNavigator.model.gameSrc.controls.gameModes;
 
 import com.worldNavigator.model.dataBase.DataProvider;
-import com.worldNavigator.model.gameSrc.Map.Map;
-import com.worldNavigator.model.gameSrc.Map.MapLoader;
-import com.worldNavigator.model.gameSrc.PlayerInfo.Player;
-import com.worldNavigator.model.gameSrc.controls.GameTimer.GameTimer;
+import com.worldNavigator.model.gameSrc.map.Map;
+import com.worldNavigator.model.gameSrc.playerInfo.Player;
+import com.worldNavigator.model.gameSrc.controls.gameTimer.GameTimer;
 
 import javax.servlet.http.HttpSession;
 import java.io.DataInputStream;
@@ -22,7 +21,6 @@ public class SinglePlayerMode extends Thread {
     private Player player;
     private HttpSession session;
     private Map map;
-    private MapLoader mapLoader;
 
     public SinglePlayerMode(Player player, HttpSession session, int port, Map map) {
         this.player = player;
@@ -78,6 +76,7 @@ public class SinglePlayerMode extends Thread {
                     DataProvider dataProvider = DataProvider.getInstance();
                     int id = Integer.parseInt(session.getAttribute("user_id").toString());
                     dataProvider.addWin(id);
+                    session.setAttribute("user_wins", dataProvider.getNumberOfWins(session.getAttribute("user_email").toString()));
                     session.setAttribute("result", finalMssg);
                     co.close();
                     server.close();
